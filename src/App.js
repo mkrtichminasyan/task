@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ListItems from "./components/ListItem";
+import Input from "./components/Input";
+import { Grid } from "@mui/material";
+import Footer from "./components/Footer";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container columns={12} direction='column'>
+      <Grid item sx={12}>
+        <Input />
+      </Grid>
+      <Grid item sx={12}>
+        <ListItems />
+      </Grid>
+      <Grid item sx={12}>
+        <Footer />
+      </Grid>
+    </Grid >
   );
 }
 
