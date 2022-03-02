@@ -6,13 +6,13 @@ const Input = () => {
     const dispatch = useDispatch()
 
     const handleClick = () => {
-        dispatch({
+        value?dispatch({
             type: "ADD_TODO", payload: {
                 id: Math.random(),
                 text: value,
                 isCompleted: false
             }
-        })
+        }): alert("laaav eli")
         setValue("")
     }
     return (

@@ -8,8 +8,9 @@ const Footer = () => {
     const handleClick = () => {
         dispatch({ type: "DELETE_COMPLETED" })
     }
-    return (
-        <Button onClick={handleClick} variant="contained" >Clear</Button>
+    return (<>
+        <Button onClick={handleClick} variant="contained" >Clear Completed</Button>
+    </>
     );
 };
 
