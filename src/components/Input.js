@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Grid, Box, TextField, Button } from '@mui/material';
+import { Box, TextField, Button } from '@mui/material';
 const Input = () => {
     const [value, setValue] = useState("")
     const dispatch = useDispatch()
@@ -22,7 +22,7 @@ const Input = () => {
                 e.preventDefault()
                 setValue(e.target.value)
             }} />
-            <Button variant="contained" color="success" onClick={handleClick}>Add</Button>
+            <Button variant="contained" color="success" onClick={()=>{handleClick()}}>Add</Button>
         </Box>
 
 
